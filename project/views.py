@@ -5,7 +5,7 @@ from .models import Book
 
 def book_list(request):
     book_queryset = Book.objects.all()  # Get all books
-    paginator = Paginator(book_queryset, 5)  # 10 books per page
+    paginator = Paginator(book_queryset, 2)  # 10 books per page
 
     page_number = request.GET.get('page')  # Get the page number from the request
     page_obj = paginator.get_page(page_number)  # Get the specific page
@@ -15,3 +15,5 @@ def book_list(request):
     }
 
     return render(request, 'book_list.html', context)
+
+
