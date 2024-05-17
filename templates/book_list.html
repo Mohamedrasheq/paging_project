@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/main.css' %}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/main1.css' %}">
 </head>
 <body>
     <!-- book_list.html -->
@@ -24,9 +24,9 @@
 
 
         <div class="col-4 card2">
-              <div class="d-flex flex-column  card1" style="text-align:center;">
+              <div class="card1" style="text-align:center;">
                   <div>
-                    <img src="{{book.img.url}}" class="img1" alt="">
+                    <img src="{{book.img.url}}" class="img1">
                   </div>
                   <div>
                     <h1 class="head2">{{book.title}}</h1>
@@ -47,12 +47,7 @@
     </div>
     
 </div>
-<ul>
-    
-    
-</ul>
 
-<!-- Pagination controls -->
 <div class="pagination">
     {% if page_obj.has_previous %}
         <a href="?page={{ page_obj.previous_page_number }}">Previous</a>
@@ -64,6 +59,7 @@
         <a href="?page={{ page_obj.next_page_number }}">Next</a>
     {% endif %}
 </div>
+
 
 </body>
 </html>
