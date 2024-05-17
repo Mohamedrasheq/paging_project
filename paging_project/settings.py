@@ -76,11 +76,8 @@ WSGI_APPLICATION = 'paging_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'books',
-        'USER':'postgres',
-        'PASSWORD':'Rasheq@462003',
-        'HOST':'localhost'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
