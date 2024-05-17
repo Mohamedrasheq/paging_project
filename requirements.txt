@@ -10,6 +10,5 @@ pillow==9.5.0  # Image processing
 django-environ==0.10.0  # Environment variables
 
 # Optional packages
-mysqlclient==2.1.1  # If using MySQL
 daphne==4.0.0  # For ASGI support, if needed for Channels
 channels==4.0.0  # For WebSocket support, if using Django Channels
