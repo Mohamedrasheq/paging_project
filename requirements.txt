@@ -1,7 +1,7 @@
 Django==4.2
 djangorestframework==3.14.0  # If using Django REST framework
 django-filter==23.1  # For filtering and pagination support in DRF
-psycopg2-binary==2.9.6  # PostgreSQL database adapter, if using PostgreSQL
+psycopg2-binary==2.9.9  # PostgreSQL database adapter, if using PostgreSQL
 gunicorn==20.1.0  # WSGI HTTP Server for Unix
 whitenoise==6.5.0  # Simplified static file serving
 dj-database-url==1.0.0  # Utility to configure database URLs
