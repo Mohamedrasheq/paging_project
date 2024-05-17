@@ -1,0 +1,15 @@
+Django==4.2
+djangorestframework==3.14.0  # If using Django REST framework
+django-filter==23.1  # For filtering and pagination support in DRF
+psycopg2-binary==2.9.6  # PostgreSQL database adapter, if using PostgreSQL
+gunicorn==20.1.0  # WSGI HTTP Server for Unix
+whitenoise==6.5.0  # Simplified static file serving
+dj-database-url==1.0.0  # Utility to configure database URLs
+django-heroku==0.3.1  # Heroku settings configuration
+pillow==9.5.0  # Image processing
+django-environ==0.10.0  # Environment variables
+
+# Optional packages
+mysqlclient==2.1.1  # If using MySQL
+daphne==4.0.0  # For ASGI support, if needed for Channels
+channels==4.0.0  # For WebSocket support, if using Django Channels
