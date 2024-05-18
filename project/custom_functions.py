@@ -11,7 +11,7 @@ def create_custom_function():
     try:
         # Ensure it's an SQLite database
         if connection.vendor == 'sqlite':
-            connection.connection.create_function("my_custom_function", 1, my_custom_function)
+            connection.connection.create_function("my_custom_function", 1, my_custom_function,deterministic=False)
     except OperationalError:
         # Handle case where the connection is not available
         pass
